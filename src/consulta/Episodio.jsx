@@ -15,7 +15,7 @@ const Episodio = () => {
     if (!epi) { return <h3>...</h3> }
 
     return (
-        <div>
+        <div className="painelEpisodio">
             <h1>{epi.name}</h1>
             <p>Air Date: {epi.air_date}</p>
             <p>Episode: {epi.episode}</p>

@@ -20,7 +20,7 @@ const NaTela = () => {
     if (!personagem) { return <h3>...</h3> }
 
     return (
-        <div>
+        <div className="painelNaTela">
             <h3>Informações</h3>
             <img src={personagem.image} alt={personagem.name} />
             <p>Nome: {personagem.name}</p>

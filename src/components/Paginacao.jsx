@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Paginacao = () => {
+
   return (
-    <div>Paginacao</div>
-  )
+    <div>Teste</div>
+  );
 }
 
 export default Paginacao

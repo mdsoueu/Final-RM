@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Paginacao from "../components/Paginacao";
 
 const ConsultaRAM = () => {
-
   const [personagens, setPersonagens] = useState([]);
 
   useEffect(() => {
@@ -16,13 +15,13 @@ const ConsultaRAM = () => {
   return (
     <>
       {personagens.map(personagem => {
-        return <div>
+        return <div className="painelConsultaRAM">
           <Link to={`/informacao/${personagem.id}`}>
             <img src={personagem.image} alt={personagem.name} />
           </Link>
         </div>
       })}
-      <Paginacao />
+        <Paginacao />
     </>
   );
 }
