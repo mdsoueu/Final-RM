@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Paginacao from "../components/Paginacao";
+// import Paginacao from "../components/Paginacao";
 
 const ConsultaRAM = () => {
   const [personagens, setPersonagens] = useState([]);
@@ -8,11 +8,14 @@ const ConsultaRAM = () => {
   useEffect(() => {
     console.log("Consultar API");
     fetch('https://rickandmortyapi.com/api/character')
-      .then((response) => response.json())
-      .then(resultadoConsulta => { setPersonagens(resultadoConsulta.results); });
+      .then((response) =>
+        response.json()
+      ).then(resultadoConsulta => {
+        setPersonagens(resultadoConsulta.results)
+      });
   }, []);
 
-  
+
   return (
     <>
       <br />
@@ -31,8 +34,6 @@ const ConsultaRAM = () => {
           </Link>
         </div>
       })}
-
-      <Paginacao />
     </>
   );
 }
