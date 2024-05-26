@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NaTela from "./NaTela";
 
 const Episodio = () => {
@@ -14,24 +15,32 @@ const Episodio = () => {
 
     if (!epi) { return <h3>...</h3> }
 
-    return (
+    return <>
+        <br />
+        <div style={{ paddingLeft: "50px" }}>
+            <span className="botaoInicio" >
+                <Link to={'/'}>Inicio</Link>
+            </span>
+        </div>
+
         <div className="painelEpisodio">
-            <h1>{epi.name}</h1>
+            <h1>Episódio</h1>
+            <p>{epi.episode}</p>
+            <p>Nome: {epi.name}</p>
             <p>Air Date: {epi.air_date}</p>
-            <p>Episode: {epi.episode}</p>
-            <h2>Characters:</h2>
+            <h2>Personagens:</h2>
             <ul>
                 {epi.characters.map((characterUrl, index) => {
                     const characterId = characterUrl.split('/').pop();
                     return (
-                        <li key={index}>
-                            <a href={`/informacao/${characterId}`}>Character {characterId}</a>
-                        </li>
+                        <ul key={index}>
+                            <a style={{ color: "black", paddingRight: "82px" }} href={`/informacao/${characterId}`}> Personagem {characterId}</a>
+                        </ul>
                     );
                 })}
             </ul>
         </div>
-    );
+    </>
 }
 
 export default Episodio

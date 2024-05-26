@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NaTela from './consulta/NaTela.jsx'
 import Episodio from './consulta/Episodio.jsx'
 import App from './App.jsx'
-import './index.css'
 
 const routes = createBrowserRouter([
   {

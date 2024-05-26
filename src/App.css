@@ -1,9 +1,61 @@
 body {
-    padding: 30px;
+    margin: 0px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(128, 0, 128);
 }
 
-/* titulo principal */
+/* Cabaçalho */
 .titlePrincipal {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
+    background: linear-gradient(45deg, rgb(0, 255, 0), rgb(90, 99, 227), rgb(0, 255, 255), rgb(169, 169, 169));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 4px;
+    padding: 5px;
+}
+
+.botaoInicio {
+    background-color: rgb(169, 169, 169);
+    border-radius: 15px 40px 30px;
+    padding: 7px;
+}
+
+.botaoInicio a {
+    text-decoration: none;
+    color: black;
+}
+
+.personagemTela {
+    border-radius: 15px 40px 30px;
+    background-color: rgb(169, 169, 169);
+    padding: 7px;
+}
+
+.personagemTela a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Consulta RAM */
+.painelConsultaRAM {
+    display: inline-block;
+    padding: 10px 12px;
+}
+
+/* Na tela */
+.painelNaTela {
+    display: inline-block;
+    text-align: justify !important;
+}
+.painelNaTelaImg {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Episidio */
+.painelEpisodio {
+    text-align: center;
 }
