@@ -50,6 +50,7 @@ body {
     display: inline-block;
     text-align: justify !important;
 }
+
 .painelNaTelaImg {
     display: inline-block;
     padding: 10px;
@@ -58,4 +59,14 @@ body {
 /* Episidio */
 .painelEpisodio {
     text-align: center;
+}
+
+/* Paginação */
+.paginacao {
+    padding-left: 40%;
+    display: inline-block;
+}
+.botaoPag {
+    display: inline-block;
+    padding: 15px;
 }
