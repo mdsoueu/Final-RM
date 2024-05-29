@@ -1,6 +1,6 @@
 # Final
 
-Utilizando <u>Rick and Morty API</u>: <br/>
+Utilizando <strong>Rick and Morty API</strong>: <br/>
 -> Consulta personagens; <br/>
 -> Consulta episódios; <br/>
 -> Paginação; <br/>
